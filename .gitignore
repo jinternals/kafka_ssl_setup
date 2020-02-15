@@ -1,0 +1,5 @@
+.idea/**
+.DS_Store
+*/**/ca_authority/**
+*/**/client_certs/**
+*/**/server_certs/**
