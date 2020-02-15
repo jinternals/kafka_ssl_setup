@@ -18,7 +18,6 @@
 ### 3. Generate Client Certificates
 
 ```shell script
- export SERVER_CN="Host Name"
- export SERVER_KEY_PASS="SomePassword"
+ export CLIENT_KEY_PASS="SomePassword"
  sh generate_client_certificate.sh
 ``` 
