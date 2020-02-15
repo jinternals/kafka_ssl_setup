@@ -27,7 +27,7 @@
 cd ./kafka-rest-client
 mvn clean install docker:build
 ```
-### 5. Run broker and sample application:
+### 5. Run broker and sample application
 ```shell script
 docker-compose up -d 
 ```
