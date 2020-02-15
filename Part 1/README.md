@@ -22,8 +22,12 @@
  sh generate_client_certificate.sh
 ``` 
 
-### 4. Build and Run:
+### 4. Build sample spring boot image
 ```shell script
+cd ./kafka-rest-client
 mvn clean install docker:build
+```
+### 5. Run broker and sample application:
+```shell script
 docker-compose up -d 
 ```
