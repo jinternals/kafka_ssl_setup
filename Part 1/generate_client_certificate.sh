@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 CLIENT_KEY_PASS="${CLIENT_KEY_PASS}"
 
