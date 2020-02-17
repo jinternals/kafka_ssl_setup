@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 
 mkdir -p "$(dirname $0)/server_certs"
 cd "$(dirname $0)/server_certs"
