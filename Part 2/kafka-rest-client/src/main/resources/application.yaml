@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    ssl:
+      key-store-location: file:/certs/kafka.client.keystore.jks
+      key-store-password: clientpassword
+      trust-store-location:  file:/certs/kafka.client.truststore.jks
+      trust-store-password: clientpassword
+      key-password: clientpassword
+    properties:
+      security.protocol: "SSL"
+    bootstrap-servers: kafka:9092
+    consumer:
+      bootstrap-servers: kafka:9092
+      group-id: demo-group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: kafka:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

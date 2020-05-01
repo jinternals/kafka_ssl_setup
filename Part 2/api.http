@@ -1,0 +1,13 @@
+GET http://localhost:8080/api/kafka/topics
+Accept: application/json
+
+###
+POST http://localhost:8080/api/kafka/topic/demo
+Content-Type: application/json
+key: some-key
+
+{
+  "id": "some-id"
+}
+
+###
